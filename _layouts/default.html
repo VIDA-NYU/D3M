@@ -11,13 +11,13 @@
   href="{{ site.url }}/feed.xml">
 
   <!-- Customized Bootstrap + Font Awesome + Solarized -->
-  <link href="/css/style.css" rel="stylesheet" media="screen">
+  <link href="{{ site.baseurl }}/css/style.css" rel="stylesheet" media="screen">
 
   <!-- Favicon -->
-  <link rel="icon" href="/favicons/favicon.png">
-  <link rel="mask-icon" href="/favicons/safari-pinned-tab.svg" color="#5bbad5">
-  <link rel="shortcut icon" href="/favicons/favicon.ico">
-  <meta name="msapplication-config" content="/favicons/browserconfig.xml">
+  <link rel="icon" href="{{ site.baseurl }}/favicons/favicon.png">
+  <link rel="mask-icon" href="{{ site.baseurl }}/favicons/safari-pinned-tab.svg" color="#5bbad5">
+  <link rel="shortcut icon" href="{{ site.baseurl }}/favicons/favicon.ico">
+  <meta name="msapplication-config" content="{{ site.baseurl }}/favicons/browserconfig.xml">
   <meta name="theme-color" content="#ffffff">
 
   <!-- Google Analytics -->
@@ -41,15 +41,15 @@
   </script>
 
   <!-- jQuery -->
-  <script src="/js/jquery.min.js"></script>
+  <script src="{{ site.baseurl }}/js/jquery.min.js"></script>
 
   <!-- Bootstrap -->
-  <script src="/js/transition.js"></script>
-  <script src="/js/collapse.js"></script>
+  <script src="{{ site.baseurl }}/js/transition.js"></script>
+  <script src="{{ site.baseurl }}/js/collapse.js"></script>
 
   <!-- Custom script to put footer at bottom even if post is short -->
   <!-- also controls color of footer logo on mouseover -->
-  <script src="/js/footer.js"></script>
+  <script src="{{ site.baseurl }}/js/footer.js"></script>
 
 </head>
 
@@ -65,7 +65,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="/D3M/">D3M Project</a>
+          <a class="navbar-brand" href="{{ site.baseurl }}/">D3M Project</a>
         </div>
         <div class="collapse navbar-collapse" id="navbar-collapse-element">
           <ul class="nav navbar-nav navbar-right">
@@ -74,21 +74,21 @@
             {% else %}
             <li>
             {% endif %}
-              <a href="/D3M/research/">Research</a>
+              <a href="{{ site.baseurl }}/research/">Research</a>
             </li>
             {% if page.categories.first == 'publications' %}
             <li class="active">
             {% else %}
             <li>
             {% endif %}
-              <a href="/D3M/publications/">Publications</a>
+              <a href="{{ site.baseurl }}/publications/">Publications</a>
             </li>
             {% if page.categories.first == 'members' %}
             <li class="active">
             {% else %}
             <li>
             {% endif %}
-              <a href="/D3M/members/">Team</a>
+              <a href="{{ site.baseurl }}/members/">Team</a>
             </li>
           </ul>
         </div>
@@ -104,10 +104,10 @@
 
   <div class="logo-container" style="display: flex; justify-content: center; align-items: center; gap: 40px; margin-top: 2em;">
         <div class="logo">
-          <img src="/images/nyu_vida.png" alt="NYU VIDA" style="width: 150px; height: 50px;">
+          <img src="{{ site.baseurl }}/images/nyu_vida.png" alt="NYU VIDA" style="width: 150px; height: 50px;">
         </div>
         <div class="logo">
-          <img src="/images/darpa.png" alt="DARPA" style="width: 150px; height: 50px;">
+          <img src="{{ site.baseurl }}/images/darpa.png" alt="DARPA" style="width: 150px; height: 50px;">
         </div>
   </div>
   <br>

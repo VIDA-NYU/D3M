@@ -2,19 +2,19 @@
 
 <div class="col-md-4">
   <div class="row research-thumbnail">
-    <a href="/research/#topic{{ include.index }}">
+    <a href="{{ site.baseurl }}/research/#topic{{ include.index }}">
       {% if top.thumbnail %}
-      <img class="center-block" src="{{ top.thumbnail }}">
+      <img class="center-block" src="{{ site.baseurl }}{{ top.thumbnail }}">
       {% elsif top.image %}
-      <img class="center-block" src="{{ top.image }}">
+      <img class="center-block" src="{{ site.baseurl }}{{ top.image }}">
       {% else %}
-      <img class="center-block" src="/images/research/default.png">
+      <img class="center-block" src="{{ site.baseurl }}/images/research/default.png">
       {% endif %}
     </a>
   </div>
   <div class="row media-body">
     <div class="smallhead text-center">
-      <a href="/research/#topic{{ include.index }}" class="off">{{ top.title }}</a>
+      <a href="{{ site.baseurl }}/research/#topic{{ include.index }}" class="off">{{ top.title }}</a>
     </div>
   </div>
   <div class="bigspacer"></div>

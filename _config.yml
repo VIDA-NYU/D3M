@@ -1,6 +1,7 @@
 name: D3M Project
-description:
-url:
+description: "The home of the D3M group at NYU"
+baseurl: "/D3M" # the subpath of your site, e.g. /blog
+url: "http://d3m.vida.nyu.edu" # the base hostname & protocol for your site
 
 markdown: kramdown
 permalink: /:categories/:title/
