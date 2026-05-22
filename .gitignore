@@ -7,4 +7,4 @@ _site/
 # Other files
 .DS_Store
 Gemfile.lock
-.ruby-version
+vendor/
