@@ -2,7 +2,7 @@
 layout: post
 title: Alpha-AutoML
 author: 
-image: 
+image:
 publication-dois:
 ---
 

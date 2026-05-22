@@ -17,8 +17,8 @@ categories:
   {% if member.position == "Principal Investigator" %}
 <div class="row">
   <div class="col-sm-3">
-    <a href="{{ member.url }}">
-      <img class="pi-img" src="{{ member.image }}">
+    <a href="{{ site.baseurl }}{{ member.url }}">
+      <img class="pi-img" src="{{ site.baseurl }}{{ member.image }}">
     </a>
     <div class="spacer"></div>
     <div class="hidden-xs">
@@ -26,7 +26,7 @@ categories:
     </div>
   </div>
   <div class="col-sm-9">
-    <a class="off" href="{{ member.url }}">
+    <a class="off" href="{{ site.baseurl }}{{ member.url }}">
       <h2>{{ member.title }}</h2>
     </a>
     <div class="bigspacer"></div>

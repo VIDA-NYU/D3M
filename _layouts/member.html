@@ -8,7 +8,7 @@ layout: default
   <div class="col-sm-12">
     <div class="media">
       {% if member.image %}
-      <img class="pull-left pad-right media-object" width=170 src="{{ member.image }}">
+      <img class="pull-left pad-right media-object" width=170 src="{{ site.baseurl }}{{ member.image }}">
       {% endif %}
       <div class="media-body">
         <h1>{% if member.profile_name %}{{member.profile_name}}{% else %}{{ member.title }}{% endif %}{% if member.suffix %}, {{ member.suffix }}{% endif %}</h1>
@@ -52,7 +52,7 @@ layout: default
       {% for publication in site.categories.publications %}
         {% for author in publication.authors %}
           {% if author == member.title %}
-      <li><a href="{{ publication.url }}">{{ publication.title }}</a></li>
+      <li><a href="{{ site.baseurl }}{{ publication.url }}">{{ publication.title }}</a></li>
           {% endif %}
         {% endfor %}
       {% endfor %}
