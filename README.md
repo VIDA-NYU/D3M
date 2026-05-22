@@ -1,6 +1,6 @@
 # D3M Webpage
 
-This is the webpage of the D3M project. Forked from this repository: https://github.com/rar-ensemble/lab_site
+This is the webpage of the D3M project (https://vida-nyu.github.io/D3M/). Forked from https://github.com/rar-ensemble/lab_site
 
 
 Here are some instructions on how to make changes:
