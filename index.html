@@ -1,0 +1,56 @@
+---
+layout: default
+title: D3M Project
+categories:
+ - home
+---
+
+<div class="row">
+  <div class="col-md-12">
+    <object id="home-logo" class="pull-left" data="/images/d3m_logo.png" type="image/png"></object>
+    <div id="home-title">
+      Data-Driven Discovery of Models
+    </div>
+  </div>
+</div>
+
+<div class="bigspacer"></div>
+
+<div class="row">
+  <div class="col-md-12" style="text-align: justify;">
+    The <a href="https://datadrivendiscovery.org/">Data-Driven Discovery of Models (D3M)</a> program aims to develop automated model discovery systems that enable users with subject matter expertise but no data science background to create empirical models of real, complex processes. At the NYU VIDA Center we address two important challenges in automating machine learning: i) pipeline synthesis and model understanding, and ii) dataset search and discovery.
+
+  </div>
+</div>
+
+<div class="bigspacer"></div>
+<div class="bigspacer"></div>
+
+<div class="row">
+  <div class="col-md-12">
+    <h1>
+      <a class="off" href="/publications/">
+        Recent Publications
+      </a>
+    </h1>
+    <hr>
+    <div class="bigspacer"></div>
+  </div>
+</div>
+
+  {% assign counter = 1 %}
+  {% assign loopindex = -1 %}
+  {% for publication in site.categories.publications limit:4 %}
+    {% assign loopindex = counter | modulo: 2 %}
+    {% if loopindex == 1 %}
+<div class="row">
+    {% endif %}
+    {% include pub_box.html pub=publication short=true %}
+    {% if loopindex == 0 %}
+</div>
+    {% endif %}
+    {% assign counter = counter | plus: 1 %}
+  {% endfor %}
+  {% if loopindex == 1 %}
+</div>
+  {% endif %}

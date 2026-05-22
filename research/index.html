@@ -1,0 +1,39 @@
+---
+layout: default
+title: D3M Project / Research
+categories:
+ - research
+---
+
+<script src="/js/smooth-scroll.min.js"></script>
+
+<div class="row">
+  <div class="col-md-12 post">
+    <h1>Research</h1>
+    <hr/>
+    <p>
+    Our research focuses on addressing two fundamental challenges in automating machine learning workflows: (i) the synthesis, analysis, and understanding of machine learning pipelines, and (ii) dataset search and discovery. A central goal of this work is to make machine learning accessible to users without extensive expertise in computer science or artificial intelligence, enabling domain experts to develop and deploy ML solutions more effectively. As machine learning systems become increasingly complex, there is a growing need for tools that not only automate the construction of ML workflows but also help users understand, refine, and trust the generated solutions. To address these challenges, we develop systems that combine AutoML, visual analytics, reinforcement learning, and human-in-the-loop interaction to support the end-to-end machine learning lifecycle.
+    </p>
+    <p>
+    Our work on pipeline synthesis and model understanding includes systems such as Visus, PipelineProfiler, AlphaD3M, and Alpha-AutoML, which support automated pipeline generation, interactive exploration of ML solutions, and integration of state-of-the-art machine learning techniques into extensible AutoML frameworks. These systems are designed to lower the barrier to developing ML applications while still providing transparency and control over the generated models and pipelines. Complementing these efforts, our work on dataset search and discovery is represented by Auctus, a dataset search engine that enables large-scale discovery and augmentation of structured data. Together, these systems aim to make machine learning more accessible, interpretable, and effective by supporting both the automated generation of ML workflows and the discovery of high-quality data needed to build them.
+    </p>
+  </div>
+</div>
+
+<div class="bigspacer"></div>
+
+<div class="bigspacer"></div>
+
+<div class="row">
+  <div class="col-md-12">
+  {% for topic in site.categories.research %}
+    {% include research_post.html topic_loc=topic index=forloop.index %}
+    <div class="bigspacer"></div>
+    <div class="bigspacer"></div>
+  {% endfor %}
+  </div>
+</div>
+
+<script>
+  smoothScroll.init();
+</script>
